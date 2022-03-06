@@ -1,0 +1,20 @@
+{
+  "coc.preferences.formatOnSaveFiletypes": [
+    "css",
+    "html",
+    "javascript",
+    "json",
+    "sh",
+    "sql",
+    "yaml"
+  ],
+  "codeLens.enable": true,
+  "yaml.format.enable": true,
+  "python.linting.mypyEnabled": true,
+  "python.linting.enabled": true,
+  "python.linting.pylintEnabled": true,
+  "python.linting.pylintArgs": ["--max-line-length=88"],
+  "python.linting.mypyPath": "mypy",
+  "python.analysis.autoImportCompletions": true,
+  "python.formatting.provider": "black"
+}
