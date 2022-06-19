@@ -428,6 +428,7 @@ let g:vimtex_latexmk_continuous = 0
 let g:vimtex_compiler_progname = 'nvr'
 
 noremap <F3> :call CocAction('format')<CR>
+noremap <leader>t :call CocAction('format')<CR>
 
 
 " "automatically closing the scratch window at the top of the vim window on
