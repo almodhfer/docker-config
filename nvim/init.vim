@@ -851,3 +851,11 @@ inoremap <silent><expr> <c-space> coc#refresh()
 
 hi CocSearch ctermfg=12 guifg=#18A3FF
 hi CocMenuSel ctermbg=109 guibg=#13354A
+
+
+highlight TelescopeSelection      guifg=#D79921 gui=bold " Selected item
+highlight TelescopeSelectionCaret guifg=#CC241D          " Selection caret
+highlight TelescopeMultiSelection guifg=#928374          " Multisections
+highlight TelescopeNormal         guibg=#00000           " Floating windows created by telescope
+highlight TelescopeMatching       guifg=blue
+
