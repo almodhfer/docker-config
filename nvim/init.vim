@@ -756,7 +756,7 @@ require("toggleterm").setup{
   persist_size = true,
   direction = 'float', --| 'horizontal' | 'window' | 'float',
   close_on_exit = true, -- close the terminal window when the process exits
-  shell = vim.o.shell, -- change the default shell
+  shell = "bash", -- change the default shell
   -- This field is only relevant if direction is set to 'float'
   float_opts = {
     -- The border key is *almost* the same as 'nvim_open_win'
@@ -832,11 +832,11 @@ noremap <c-z> <nop>
 tnoremap <F1> <c-c>
 
 colorscheme oceanic_material
-let g:oceanic_material_transparent_background=1
-let g:oceanic_material_allow_bold = 1
-let g:oceanic_material_allow_underline = 1
-let g:oceanic_material_allow_undercurl=1
-let g:oceanic_material_allow_reverse = 1
+" let g:oceanic_material_transparent_background=1
+" let g:oceanic_material_allow_bold = 1
+" let g:oceanic_material_allow_underline = 1
+" let g:oceanic_material_allow_undercurl=1
+" let g:oceanic_material_allow_reverse = 1
 
 
 inoremap <silent><expr> <CR> coc#pum#visible() ? coc#pum#confirm() : "\<C-g>u\<CR>\<c-r>=coc#on_enter()\<CR>"
