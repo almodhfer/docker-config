@@ -2,12 +2,12 @@
 " @author Maciej Bedra
 
 " Configuration for Neovim out of the box
-source /root/.config/nvim/general/settings.vim
-source /root/.config/nvim/general/keys.vim
+source $HOME/.config/nvim/general/settings.vim
+source $HOME/.config/nvim/general/keys.vim
 let mapleader = "\<Space>"
 
 " Neovim extensions
-call plug#begin('/root/.config/nvim/plugins')
+call plug#begin('$HOME/.config/nvim/plugins')
   Plug 'morhetz/gruvbox'
   Plug 'vim-airline/vim-airline'
   Plug 'vim-airline/vim-airline-themes'
@@ -45,20 +45,20 @@ call plug#end()
 
 
 " Extensions configuration
-" source /root/.config/nvim/gruvbox/gruvbox.vim
-source /root/.config/nvim/vimspector/vimspector.vim
-source /root/.config/nvim/airline/airline.vim
-source /root/.config/nvim/nerdtree/nerdtree.vim
-source /root/.config/nvim/nerdtree/nerdtree-git.vim
-source /root/.config/nvim/startify/startify.vim
-source /root/.config/nvim/telescope/telescope.vim
-" source /root/.config/nvim/fzf/fzf.vim
-" source /root/.config/nvim/git/fzf-checkout.vim
-source /root/.config/nvim/treesitter/treesitter.vim
-source /root/.config/nvim/coc/coc.vim
-source /root/.config/nvim/coc/extensions.vim
-source /root/.config/nvim/git/fugitive.vim
-source /root/.config/nvim/term/term.vim
+" source $HOME/.config/nvim/gruvbox/gruvbox.vim
+source $HOME/.config/nvim/vimspector/vimspector.vim
+source $HOME/.config/nvim/airline/airline.vim
+source $HOME/.config/nvim/nerdtree/nerdtree.vim
+source $HOME/.config/nvim/nerdtree/nerdtree-git.vim
+source $HOME/.config/nvim/startify/startify.vim
+source $HOME/.config/nvim/telescope/telescope.vim
+" source $HOME/.config/nvim/fzf/fzf.vim
+" source $HOME/.config/nvim/git/fzf-checkout.vim
+source $HOME/.config/nvim/treesitter/treesitter.vim
+source $HOME/.config/nvim/coc/coc.vim
+source $HOME/.config/nvim/coc/extensions.vim
+source $HOME/.config/nvim/git/fugitive.vim
+source $HOME/.config/nvim/term/term.vim
 
 
 "-----------------------old----------------------------------------
