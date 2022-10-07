@@ -18,16 +18,14 @@ call plug#begin('/root/.config/nvim/plugins')
   Plug 'mhinz/vim-startify'
   Plug 'nvim-lua/plenary.nvim'
   Plug 'nvim-telescope/telescope.nvim'
-  Plug 'junegunn/fzf'
   Plug 'chriskempson/base16-vim'
-  Plug 'junegunn/fzf.vim'
   Plug 'tpope/vim-fugitive'
-  Plug 'stsewd/fzf-checkout.vim'
+  " Plug 'stsewd/fzf-checkout.vim'
   Plug 'airblade/vim-gitgutter'
-  Plug 'ap/vim-css-color'
+  " Plug 'ap/vim-css-color'
   Plug 'neoclide/coc.nvim', { 'branch': 'release' }
   Plug 'puremourning/vimspector'
-  Plug 'jwalton512/vim-blade'
+  " Plug 'jwalton512/vim-blade'
   Plug 'tpope/vim-surround'
   Plug 'tpope/vim-commentary'
   Plug 'easymotion/vim-easymotion'
@@ -36,18 +34,18 @@ call plug#begin('/root/.config/nvim/plugins')
   Plug 'nvim-telescope/telescope-project.nvim'
   Plug 'nvim-telescope/telescope-file-browser.nvim'
   Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}  " We recommend updating the parsers on update
-  Plug 'joshdick/onedark.vim'
-  Plug 'glepnir/oceanic-material'
-  Plug 'rafi/awesome-vim-colorschemes'
-  Plug 'joshdick/onedark.vim'
-  Plug 'glepnir/oceanic-material'
+  Plug 'yaegassy/coc-blade', {'do': 'yarn install --frozen-lockfile'}
+  " Plug 'joshdick/onedark.vim'
+  " Plug 'glepnir/oceanic-material'
+  " Plug 'rafi/awesome-vim-colorschemes'
+  " Plug 'joshdick/onedark.vim'
 
 
 call plug#end()
 
 
 " Extensions configuration
-source /root/.config/nvim/gruvbox/gruvbox.vim
+" source /root/.config/nvim/gruvbox/gruvbox.vim
 source /root/.config/nvim/vimspector/vimspector.vim
 source /root/.config/nvim/airline/airline.vim
 source /root/.config/nvim/nerdtree/nerdtree.vim
@@ -710,6 +708,10 @@ require('telescope').setup{
     -- }
     -- Now the picker_config_key will be applied every time you call this
     -- builtin picker
+
+    colorscheme = {
+      enable_preview = true
+    },
     buffers = {
        sort_mru = true,
        ignore_current_buffer = true
@@ -831,7 +833,8 @@ endif
 noremap <c-z> <nop>
 tnoremap <F1> <c-c>
 
-colorscheme oceanic_material
+colorscheme base16-gruvbox-dark-medium
+
 " let g:oceanic_material_transparent_background=1
 " let g:oceanic_material_allow_bold = 1
 " let g:oceanic_material_allow_underline = 1
@@ -853,9 +856,9 @@ hi CocSearch ctermfg=12 guifg=#18A3FF
 hi CocMenuSel ctermbg=109 guibg=#13354A
 
 
-highlight TelescopeSelection      guifg=#D79921 gui=bold " Selected item
-highlight TelescopeSelectionCaret guifg=#CC241D          " Selection caret
-highlight TelescopeMultiSelection guifg=#928374          " Multisections
-highlight TelescopeNormal         guibg=#00000           " Floating windows created by telescope
-highlight TelescopeMatching       guifg=blue
+" highlight TelescopeSelection      guifg=#D79921 gui=bold " Selected item
+" highlight TelescopeSelectionCaret guifg=#CC241D          " Selection caret
+" highlight TelescopeMultiSelection guifg=#928374          " Multisections
+" highlight TelescopeNormal         guibg=#00000           " Floating windows created by telescope
+" highlight TelescopeMatching       guifg=yellow
 

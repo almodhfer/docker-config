@@ -17,6 +17,8 @@ lua << EOF
       "css",
       "html",
       "javascript",
+      "python",
+      "vue",
       "json",
       "yaml"
     },
